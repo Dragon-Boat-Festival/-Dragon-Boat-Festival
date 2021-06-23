@@ -2,6 +2,8 @@
 
 > 项目是由 `vue` 和 `elementUi` 搭建的。
 
+> 线上预览：https://huaungwj.github.io/#/
+
 如果觉得对您有帮助，您可以在右上角给我个star支持一下，谢谢！
 
 ## 页面总览
