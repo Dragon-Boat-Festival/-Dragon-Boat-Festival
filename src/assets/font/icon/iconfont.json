@@ -1,0 +1,44 @@
+{
+  "id": "2610046",
+  "name": "duanwu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5622545",
+      "name": "粽子 MBE",
+      "font_class": "zongziMBE",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "5851399",
+      "name": "粽子",
+      "font_class": "zongzi",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "9255934",
+      "name": "肉粽子宝宝",
+      "font_class": "rouzongzibaobao",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "9255936",
+      "name": "粽子宝宝",
+      "font_class": "zongzibaobao",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "15544510",
+      "name": "粽子",
+      "font_class": "zongzi1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

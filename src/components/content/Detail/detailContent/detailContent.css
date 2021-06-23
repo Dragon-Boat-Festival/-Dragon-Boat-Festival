@@ -1,0 +1,159 @@
+.detail-content {
+    overflow: hidden;
+}
+
+/* tabs  */
+.main-body .comment-top-container {
+    margin: 16px 0;
+}
+
+/* 头部 */
+.main-body .comment-top-container .comment-top-positive-rate {
+    line-height: 40px;
+    color: #845f3f;
+}
+
+/* 卡片切换部分 */
+.main-body .comment-top-container .comment-top-tabs {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.main-body .comment-top-container .comment-top-tabs .tabbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-body .comment-top-container .comment-top-tabs .tabbar-container .tabbar-item {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.main-body .comment-top-container .comment-top-tabs .tabbar-container .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background: #845f3f;
+    color: white;
+    border: 1px solid #845f3f;
+}
+
+.main-body .el-image {
+    width: 100%;
+    margin-top: -4px;
+}
+
+.detail-content > * {
+    box-sizing: content-box;
+}
+
+/* tabs magrin */
+.ant-tabs-top > .ant-tabs-nav,
+.ant-tabs-bottom > .ant-tabs-nav,
+.ant-tabs-top > div > .ant-tabs-nav,
+.ant-tabs-bottom > div > .ant-tabs-nav {
+    margin: 0;
+}
+
+.ant-tabs-nav {
+    background-color: #e7e7e7 !important;
+}
+
+.ant-tabs-tab {
+    width: 129px;
+    display: flex;
+    height: 13px;
+    margin: 0 !important;
+    justify-content: center;
+    align-items: center;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+    border-right-width: 1px;
+}
+
+.ant-tabs-nav-list {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.ant-tabs-tab-btn {
+    font-size: 13px;
+}
+
+.ant-fade-leave.ant-fade-leave-active {
+    display: none;
+}
+
+.ant-fade-enter-active {
+    animation-name: antFadeIn !important;
+}
+
+/* 评论部分样式 */
+.comment-items {
+    width: 100%;
+    position: relative;
+}
+
+.comment-items .comment-item {
+    width: 100%;
+    position: relative;
+}
+
+.comment-items .comment-item .t-div {
+    margin-top: 35px;
+    display: flex;
+}
+
+.comment-items .comment-item .t-div .myimg {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: #eee;
+    overflow: hidden;
+}
+
+.comment-items .comment-item .t-div .info {
+    margin-left: 30px;
+}
+
+.comment-items .comment-item .t-div .info .name {
+    font-size: 18px;
+}
+
+.comment-items .comment-item .t-div .info .attach {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.comment-items .comment-item .t-div .info .attach .margin {
+    margin: 0 10px;
+}
+
+.comment-items .comment-item .m-div {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+.comment-items .comment-item .img-div {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    margin-left: 64px;
+}
+
+.comment-items .comment-item .b-div {
+    margin-top: 24px;
+    height: 1px;
+    width: 711px;
+    margin-left: 64px;
+    background: #eee;
+}
+
+.ant-image {
+    margin-right: 5px;
+}
+
+.ant-tabs-nav-operations {
+    display: none;
+}

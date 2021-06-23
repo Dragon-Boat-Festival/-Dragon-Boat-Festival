@@ -1,0 +1,86 @@
+@import './normalize.css';
+
+/*:root->获取根元素html*/
+:root {
+    --color-text: #5BB35C;
+    --color-height-text: #316832;
+    --color-tint: #ff8198;
+    --color-background: #5BB35C;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+     /* user-select: none;静止用户鼠标在页面上选中文字/图片等 */
+    -webkit-tap-highlight-color: transparent; /* 苹果浏览器引擎,tap点击,highlight背景高亮,color颜色,颜色用数值调节 */
+    background: var(--color-background);
+    color: var(--color-text);
+    /* rem vw/vh */
+    width: 100vw;
+    background-color: #EEEEEE;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+.clear-fix::after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear-fix {
+    zoom: 1;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 浏览器 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: #209121;
+    border-radius: 10px;
+}
+
+.container {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 98%;
+    }
+
+
+}

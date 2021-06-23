@@ -1,0 +1,118 @@
+<template>
+  <div id="container">
+    <div id="leafContainer" ref="leafContainer"></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Background",
+  created() {
+    this.$nextTick(() => {
+      //获取高度
+      this.pageHeight = document.body.offsetHeight - screen.height;
+      console.log(document.body.offsetHeight - screen.height);
+      this.listenerFunction();
+    });
+  },
+  beforeDestroy() {
+    document.removeEventListener("scroll", this.listenerFunction);
+  },
+  mounted() {
+    // console.log(this.imgArr);
+  },
+
+  data() {
+    return {
+      imgArr: [
+        require("@/assets/images/background/realLeaf1.png"),
+        require("@/assets/images/background/realLeaf2.png"),
+        require("@/assets/images/background/realLeaf3.png"),
+        require("@/assets/images/background/realLeaf4.png"),
+      ],
+      count: 5,
+      pageWidth: 0,
+      pageHeight: 0,
+      flag: false,
+    };
+  },
+  methods: {
+    init() {
+      let container = this.$refs.leafContainer;
+      for (let i = 0; i < this.count; i++) {
+        container.appendChild(this.createLeaf());
+      }
+    },
+    randomInteger() {
+      return this.imgArr[Math.floor(Math.random() * this.imgArr.length)];
+    },
+    randomFloat(min, max) {
+      const time = min + Math.random() * (max - min);
+      // console.log(time);
+      return time;
+    },
+    durationValue(value) {
+      return value + "s";
+    },
+
+    dropHeight() {
+      const runkeyframes = `
+      @-webkit-keyframes drop{
+	0%{
+		-webkit-transform: translate(0px, 0px);
+	}
+	100%{
+		-webkit-transform: translate(0px,${this.pageHeight}px);
+	}
+}`;
+      var sheet = document.styleSheets[0];
+      sheet.insertRule(runkeyframes, 0);
+      console.log(runkeyframes);
+      console.log(this.pageHeight);
+    },
+
+    createLeaf() {
+      let srcs = this.randomInteger();
+
+      let tops = "-100px";
+      let lefts = "" + this.randomInteger(0, document.body.clientWidth) + "px";
+      let imgSpinName = Math.random() < 5 ? "leftRotation" : "rightRotation";
+      let divName = "fade,drop";
+      let aniDuration = this.durationValue(this.randomFloat(5, 20));
+      let imgSpinDuration = this.durationValue(this.randomFloat(4, 8));
+      let leafDelay = this.durationValue(this.randomFloat(0, 5));
+      let leafDiv = document.createElement("div");
+      let leafImage = document.createElement("img");
+
+      console.log(this.pageHeight);
+      leafImage.src = srcs;
+      leafDiv.style.top = tops;
+      leafDiv.style.left = lefts;
+      leafDiv.style.webkitAnimationName = divName;
+      leafImage.style.webkitAnimationName = imgSpinName;
+      leafDiv.style.webkitAnimationDuration = aniDuration + "," + aniDuration;
+      leafDiv.style.webkitAnimationDelay = leafDelay + "," + leafDelay;
+      leafImage.style.webkitAnimationDuration = imgSpinDuration;
+      leafDiv.appendChild(leafImage);
+      return leafDiv;
+    },
+    listenerFunction(e) {
+      document.addEventListener("scroll", () => {
+        this.pageHeight = document.body.offsetHeight - screen.height -200;
+        console.log(this.pageHeight);
+        if (!this.flag) {
+          this.dropHeight();
+          this.init();
+          this.flag = true;
+        } else {
+          this.dropHeight();
+        }
+      });
+    },
+  },
+};
+</script>
+
+<style>
+@import "~@/components/content/background/index.css";
+</style>

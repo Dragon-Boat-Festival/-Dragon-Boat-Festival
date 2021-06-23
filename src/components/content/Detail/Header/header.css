@@ -1,0 +1,624 @@
+@media screen and (max-width: 768px) {
+    .sku-container {
+        display: none !important;
+    }
+
+    .detail-header {
+        margin-bottom: 30px !important;
+    }
+}
+
+.detail-header {
+    width: 100%;
+    margin-bottom: 67px;
+    height: auto !important;
+    display: flex;
+}
+
+.detail-header .sku-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60%;
+}
+
+/* 售价等 */
+.detail-header .sku-container .sku-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    vertical-align: bottom;
+    margin-right: 10px;
+    width: 48px;
+}
+
+.detail-header .sku-container .staticWords {
+    font-size: 12px;
+    color: #333;
+    margin-right: 3px;
+}
+
+.detail-header .sku-container .hyperlinkWords {
+    cursor: pointer;
+    color: #c00000;
+    margin-left: 4px;
+}
+
+.detail-header .sku-container .detail-container * {
+    box-sizing: content-box;
+}
+
+/* 商品标题 */
+.detail-header .sku-container .name {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.detail-header .sku-container .name .label {
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.detail-header .sku-container .name .good-name {
+    vertical-align: middle;
+    line-height: 26px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* 描述 summary */
+.detail-header .sku-container .summary {
+    width: 84%;
+    line-height: 18px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* 促销 .promotion-box */
+.detail-header .sku-container .promotion-box {
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.detail-header .sku-container .promotion-box .iconfont {
+    color: #999;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-text {
+    color: #333;
+    font-size: 12px;
+    max-width: 460px;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-type {
+    padding: 0 5px;
+    height: 18px;
+    line-height: 15px;
+    text-align: center;
+    border: 1px solid #c00002;
+    color: #c00002;
+    margin-right: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info {
+    margin-left: 10px;
+    position: relative;
+}
+
+/*  促销赠品列表清单 */
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info .gifts-popover {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 202px;
+    z-index: 10;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info .gifts-popover .gifts-item {
+    color: #333;
+    line-height: 2;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info .hide {
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info .show {
+    height: auto;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info .two {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .d-gift-info .d-gift-container {
+    display: flex;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .pro-tit {
+    display: flex;
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .pro-tit .interactive {
+    cursor: pointer;
+}
+
+/* 注意事项 */
+.detail-header .sku-container .promotion-box .promotion-wrap .return-coupon-tips-container {
+    margin-top: 10px;
+    color: #666;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .return-coupon-tips-container .return-coupon-tips-title {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .return-coupon-tips-container .return-coupon-tips-title .return-coupon-tips-img {
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.detail-header .sku-container .promotion-box .promotion-wrap .return-coupon-tips-container .return-coupon-tips-title .return-coupon-tips-text {
+    font-size: 12px;
+    flex: 1;
+}
+
+/* 商品售价部分 */
+.detail-header .sku-container .card {
+    margin-top: 20px;
+    margin-bottom: 13px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 价格 */
+.detail-header .sku-container .card .price-line {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 37px;
+    overflow: hidden;
+    vertical-align: bottom;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.detail-header .sku-container .card .price-line .price {
+    color: #c00000;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.detail-header .sku-container .card .price-line .price .money-symbol {
+    margin-right: 3px;
+    font-size: 14px;
+    vertical-align: 0;
+    font-weight: 500;
+}
+
+.detail-header .sku-container .card .price-line .price .value {
+    font-size: 30px;
+    vertical-align: 0;
+    font-weight: 600;
+}
+
+/* 服务 */
+.detail-header .sku-container .card .service-line {
+    margin-bottom: 4px;
+    visibility: bottom;
+    line-height: 24px;
+    position: relative;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-header .sku-container .card .service-line .service {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.detail-header .sku-container .card .service-line .service .service-item {
+    overflow: hidden;
+    min-height: 24px;
+    line-height: 24px;
+    margin-left: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-header .sku-container .card .service-line .service .service-item .icondui {
+    display: inline-block;
+    font-size: 16px;
+    color: #c00003;
+    margin-right: 10px;
+}
+
+.detail-header .sku-container .card .service-line .service .service-item .icondui:hover {
+    cursor: pointer;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container {
+    position: absolute;
+    top: 3px;
+    left: 60px;
+    z-index: 100;
+    overflow: visible;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .iconfont {
+    color: red;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content {
+    display: none;
+    z-index: 10000;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container {
+    position: relative;
+    overflow: visible;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container {
+    position: absolute;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid #e7e7e7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container {
+    overflow-y: auto;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container .content-main {
+    max-height: 350px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container .content-main .text-item {
+    margin-top: 10px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container .content-main .text-item .text-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container .content-main .text-item .text-content {
+    font-size: 12px;
+    color: #666;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container::-webkit-scrollbar-thumb {
+    background-color: #845f3f;
+    width: 3px;
+    border-radius: 6px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .inner-container .container::webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .size {
+    visibility: hidden;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .size .content-main {
+    max-height: 350px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .size .content-main .text-item {
+    margin-top: 10px;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .size .content-main .text-item .text-title {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container .content .cardmodal-outer-container .size .content-main .text-item .text-content {
+    font-size: 12px;
+    color: #666;
+}
+
+.detail-header .sku-container .card .service-line .introduce-container:hover .content {
+    display: inherit;
+}
+
+/* 地址栏 */
+.detail-header .sku-container .address-line {
+    overflow: hidden;
+    padding: 0 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-header .sku-container .address-line .sku-title {
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.detail-header .sku-container .address-line .address {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.detail-header .sku-container .address-line .address a {
+    margin-left: 10px;
+    color: #666;
+}
+
+.detail-header .sku-container .address-line .address a:hover {
+    color: #5BB35C;
+    text-decoration: underline;
+}
+
+/* 商品数量 */
+.detail-header .sku-container .count-line {
+    overflow: hidden;
+    padding-top: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-header .sku-container .count-line .count-title {
+    line-height: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.detail-header .sku-container .count-line .count-container {
+    display: flex;
+}
+
+.detail-header .sku-container .count-line .minus-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    box-sizing: content-box;
+    text-align: center;
+    color: #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.detail-header .sku-container .count-line .minus-btn .iconfont {
+    color: #ccc;
+    font-weight: bolder;
+}
+
+.detail-header .sku-container .count-line .minus-btn {
+    cursor: not-allowed;
+}
+
+.detail-header .sku-container .count-line .minus-btn-active {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    box-sizing: content-box;
+    text-align: center;
+    color: #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.detail-header .sku-container .count-line .minus-btn-active .iconfont {
+    color: #5BB35C;
+    font-weight: bolder;
+}
+
+.detail-header .sku-container .count-line .count-input {
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    box-sizing: content-box;
+    border-color: #d6d6d6;
+    border-style: solid;
+    border-width: 1px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    border-left: none !important;
+    border-radius: 0 !important;
+}
+
+.detail-header .sku-container .count-line .count-input:hover {
+    box-shadow: none;
+}
+
+/* 加入购物车按钮部分 */
+.detail-header .sku-container .btn-line {
+    height: 52px;
+    position: relative;
+    display: flex;
+}
+
+.detail-header .sku-container .btn-line .buy-btn-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.detail-header .sku-container .btn-line .buy-btn-container button {
+    margin-right: 15px;
+}
+
+.detail-header .sku-container .btn-line .favor-btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    color: #999;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    transition: all .5s cubic-bezier(0, 1, .5, 1);
+}
+
+.detail-header .sku-container .btn-line .favor-btn button {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    color: #999;
+    align-items: center;
+}
+
+.detail-header .sku-container .btn-line .favor-btn button .iconfont {
+    color: #999;
+    transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.detail-header .sku-container .btn-line .favor-btn .ant-btn {
+    border-color: #d8d8d8;
+}
+
+.detail-header .sku-container .btn-line .faver-service-btn {
+    margin-left: 25px;
+}
+
+.detail-header .sku-container .btn-line .ant-btn:hover > .iconfont,
+.detail-header .sku-container .btn-line .ant-btn:focus > .iconfont {
+    color: white;
+}
+
+.detail-header .sku-container .btn-line .ant-btn:hover,
+.detail-header .sku-container .btn-line .ant-btn:focus {
+    border-color: #5BB35C;
+    color: #5BB35C;
+    background-color: #5BB35C;
+    color: white;
+}
+
+.size-line {
+    margin-bottom: 14px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.size-line .size-container {
+    margin-bottom: -14px;
+    width: 473px;
+    overflow: hidden;
+    display: flex;
+}
+
+.tag-item-onSaled,
+.tag-item-offSaled {
+    border: 1px solid #d6d6d6;
+    margin-right: 14px;
+    box-sizing: border-box;
+    padding: 4px 20px;
+    color: #333;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    transition: all .5s cubic-bezier(0, 1, .5, 1);
+    text-align: left;
+    user-select: none;
+}
+
+.tag-item-offSaled {
+    border: 1px dashed #d6d6d6;
+}
+
+.tag-item-onSelected {
+    border: 1px solid #5BB35C;
+    margin-right: 14px;
+    box-sizing: border-box;
+    padding: 4px 20px;
+    color: #5BB35C;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    transition: all .5s cubic-bezier(0, 1, .5, 1);
+    text-align: left;
+    user-select: none;
+}
+
+.tag-item-onSaled:hover,
+.tag-item-onSelected:hover,
+.tag-item-offSaled:hover {
+    cursor: pointer;
+}
+
+
+/* el */
+.el-input__inner {
+    border-radius: 0;
+    border: none;
+    border-bottom: #DCDFE6 1px solid;
+}
